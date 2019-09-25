@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite" parallel="tests" thread-count="5">
+    <!--mvn clean test -Dsurefire.suiteXmlFiles=/pa th/to/testng.xml-->
+    <test name="AutoQA" >
+        <classes>
+            <class name="test.tests.RegisterTests" />
+        </classes>
+    </test>
+    <test name="AutoQA2" >
+        <parameter name="bla" value="bla"/>
+        <classes>
+            <class name="test.tests.RegisterTestsq" />
+
+
+        </classes>
+    </test>
+</suite>
